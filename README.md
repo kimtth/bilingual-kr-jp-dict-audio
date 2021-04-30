@@ -2,10 +2,17 @@
 
 - input
  
- [sample-input](./doc/sample-input.xlsx)
+| No | Text |
+| :---: | :---: |
+| 1-1 | 안녕하세요 | 
+| 1-2 | 바이바이 | 
+ 
+ [sample-input](./data/sample-input.xlsx)
+ 
+ 
 
 - output
  
- translation / pronunciation (hurigana) / audio (normal & 70% slow down)
+ translation / pronunciation (hurigana) / audio (normal / 0.7x slow down)
  
- [sample-output](./doc/sample-output.PNG)
+ ![sample-output](./data/sample-output.PNG)
