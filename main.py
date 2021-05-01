@@ -63,11 +63,11 @@ def write_result_to_html(dir_path, file_name, dataframe):
     # (0, '=HYPERLINK(".\\mp3\\1-1.mp3"," [ ▶ ] ")') (1, '=HYPERLINK(".\\mp3\\2-2.mp3"," [ ▶ ] ")')
     # <a href="url">link text</a>
     copy_dataframe['Play'] = copy_dataframe['Play'].str.replace('=HYPERLINK(".\\mp3\\',
-                                                                '<a href="file:\\\\storage\\emulated\\0\\Download\\mp3\\',
+                                                                '<a href=".\\mp3\\',
                                                                 regex=False)
     copy_dataframe['Play'] = copy_dataframe['Play'].str.replace(', " [ ▶ ] ")', '> [ ▶ ] </a>', regex=False)
     copy_dataframe['Slow'] = copy_dataframe['Slow'].str.replace('=HYPERLINK(".\\mp3_s\\',
-                                                                '<a href="file:\\\\storage\\emulated\\0\\Download\\mp3_s\\',
+                                                                '<a href=".\\mp3_s\\',
                                                                 regex=False)
     copy_dataframe['Slow'] = copy_dataframe['Slow'].str.replace(', " [ ▶ ] ")', '> [ ▶ ] </a>', regex=False)
 
